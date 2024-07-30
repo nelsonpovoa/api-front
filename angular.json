@@ -20,13 +20,15 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
+            
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/*",
+              "src/public",
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": [],
@@ -86,7 +88,8 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "src/assets"
               }
             ],
             "styles": [
@@ -97,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c59b291d-2a6f-44d0-9ed2-39ba4eeda4bb"
   }
 }
